@@ -10,7 +10,7 @@ Before you can run the pipeline, you need to have the following installed on you
 ### Installation
 To install the required packages and build the Docker images, you can run the following command:
 
-- docker-compose build
+docker-compose build
 
 ### Configuration
 The configuration files are located in the config directory. Here's a brief overview of each file:
@@ -29,7 +29,7 @@ docker-compose up -d cassandra kafka
 
 2. Start the Pyspark producer by running the following command:
 docker-compose up -d producer
-- This will read the employee data from Cassandra and publish it to Kafka.
+This will read the employee data from Cassandra and publish it to Kafka.
 
 3. Start the Pyspark consumer by running the following command:
 docker-compose up -d consumer
